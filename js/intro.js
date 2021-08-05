@@ -27,3 +27,7 @@
 //         .pauseFor(2000)
 //         .start();
 // });
+
+$(function(){
+  $("section").SnapScroll();
+})

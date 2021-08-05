@@ -13,17 +13,17 @@
 // }
 // setInterval(typing, 100)
 
-$(document).ready(function() {
-    var text = document.querySelector(".text");
+// $(document).ready(function() {
+//     var text = document.querySelector(".text");
 
-    var typewriter = new Typewriter(text, {
-        loop: true
-    });
+//     var typewriter = new Typewriter(text, {
+//         loop: true
+//     });
 
-    typewriter.typeString('안녕하세요')
-        .pauseFor(2000)
-        .deleteAll()
-        .typeString('Web Publisher 정연해 입니다')
-        .pauseFor(2000)
-        .start();
-});
+//     typewriter.typeString('안녕하세요')
+//         .pauseFor(2000)
+//         .deleteAll()
+//         .typeString('Web Publisher 정연해 입니다')
+//         .pauseFor(2000)
+//         .start();
+// });

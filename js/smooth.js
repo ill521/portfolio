@@ -1,4 +1,0 @@
-$(function(){
-    $("section").SnapScroll();
-  });
-  

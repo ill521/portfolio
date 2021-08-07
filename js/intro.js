@@ -1,33 +1,23 @@
-// const content = "안녕하세요 \n web publisher 정연해 \n 개인 포트폴리오 홈페이지 입니다";
 
-// const text = document.querySelector("#intro");
-// let i = 0;
+let mainNavLinks = document.querySelectorAll("nav ul li a");
+let mainSections = document.querySelectorAll("main section");
 
-// function typing(){
-//     let txt = content[i++];
-//     text.innerHTML += txt=== "\n" ? "<br/>": txt;
-//     if (i > content.length) {
-//         text.textContent = "";
-//         i = 0;
-//     }
-// }
-// setInterval(typing, 100)
+let lastId;
+let cur = [];
 
-// $(document).ready(function() {
-//     var text = document.querySelector(".text");
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
 
-//     var typewriter = new Typewriter(text, {
-//         loop: true
-//     });
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector(link.hash);
 
-//     typewriter.typeString('안녕하세요')
-//         .pauseFor(2000)
-//         .deleteAll()
-//         .typeString('Web Publisher 정연해 입니다')
-//         .pauseFor(2000)
-//         .start();
-// });
-
-$(function(){
-  $("section").SnapScroll();
-})
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+});

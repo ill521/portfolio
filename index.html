@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,31 @@
   <title>portfolio</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
-  <link href="//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo" rel="stylesheet" type="text/css"/>
+  <link href="//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo" rel="stylesheet"
+    type="text/css" />
   <link rel="stylesheet" href="./css/fonts.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/background.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
 
 </head>
+
 <body>
-    <header id="header">
-      <div class="wrap">
-        <ul>
+  <div class="back-up"></div>
+
+  <header id="header">
+    <div class="wrap">
+      <nav class="nav">
+        <ul id="pager">
           <li class="git" onClick="window.open('https://github.com/ill521','_blank')" style="cursor:pointer;">
             <img src="./img/GitHub-Mark-32px.png" alt="">
           </li>
           <li>
-            <a href="#intro"><span>intro</span></a>
+            <a href="#intro" class="active"><span>intro</span></a>
           </li>
           <li>
             <a href="#about"><span>about</span></a>
@@ -30,78 +41,124 @@
             <a href="#portfolio"><span>portfolio</span></a>
           </li>
         </ul>
-    </header>
-    <!-- header -->
-    <section id="intro">
-      <div class="wrap">
-        <span class="text">웹퍼블리셔 정연해</span>
-        <span class="text2">개인 포트폴리오 페이지 입니다.</span>
-        <div class="mouse"></div>
+      </nav>
+  </header>
+  <!-- //header -->
+  <div class="background">
+
+  </div>
+  <section id="intro">
+    <div class="wrap">
+      <div class="main">
+        <span class="text" data-aos="fade-right" data-aos-duration="1500">웹퍼블리셔 신입으로 지원하는</span>
+        <span class="jung" data-aos="fade-right" data-aos-duration="1700">정연해</span>
+        <span class="text2" data-aos="fade-right" data-aos-duration="1900"> 개인 포트폴리오 페이지입니다</span>
       </div>
-    </section>
-    <section id="about">
-      <h2>about</h2>
-      <div class="about-wrap">
-        <div class="pic">
-          <img src="./img/profile.jpg" alt="">
-        </div>
-        <div class="resume">
-          <span class="name">이름 : 정연해</span>
-          <span class="birth">생년월일 : 1990.06.14</span>
-          <span class="phone">연락처 : <a href="#">010-3895-9716</a></span>
-          <span class="mail">e-mail : <a href="#">ill521@naver.com</a></span>
-        </div>
-        <div class="skills">
-          <h3>Skills</h3>
+      <div class="mouse" data-aos="fade-up" data-aos-duration="2500"></div>
+    </div>
+  </section>
+  <!-- //intro -->
+  <section id="about">
+    <h2 data-aos="zoom-in-right" data-aos-duration="1200">about</h2>
+    <div class="about-wrap">
+      <div class="picture">
+        <div class="profile1" data-aos="flip-left" data-aos-duration="1200"><img src="./img/profile.jpg" alt=""></div>
+        <div class="profile2" data-aos="flip-right" data-aos-duration="1800"><img src="./img/profile2.jpg" alt=""></div>
+        <div class="profile3" data-aos="flip-up" data-aos-duration="2200"><img src="./img/profile3.jpg" alt=""></div>
+      </div>
+      <ul class="resume" data-aos="fade-up" data-aos-duration="1500">
+        <li class="name">이름 : 정연해</li>
+        <li class="birth">생년월일 : 1990.06.14</li>
+        <li class="phone">연락처 : <a href="#">010-3895-9716</a></li>
+        <li class="mail">e-mail : <a href="#">ill521@naver.com</a></li>
+        <li class="edu">교육 : 미래컴퓨터학원 - 동영상활용 멀티미디어 콘텐츠제작<br>(프리미어 프로,html-css-javascript-jquery) 수료</li>
+        <li class="certificate">자격증 : 웹디자인기능사 </li>
+
+      </ul>
+      <div class="skills">
+        <h3 data-aos="fade-up" data-aos-duration="1000">Skills</h3>
+        <ul>
+          <li class="html5 up-on-scroll">
+            <span><img src="./img/html5.svg" alt="html5"></span>
+          </li>
+          <li class="css up-on-scroll">
+            <span><img src="./img/cssicon.svg" alt="CSS"></span>
+          </li>
+          <li class="js up-on-scroll">
+            <span><img src="./img/jslogo.svg" alt="javascript"></span>
+          </li>
+        </ul>
+        <div class=text data-aos="fade-up" data-aos-duration="2000">
           <ul>
-            <li class="html5 up-on-scroll">
-              <span><img src="./img/html5.svg" alt="html5"></span>
-            </li>
-            <li class="css up-on-scroll">
-              <span><img src="./img/cssicon.svg" alt="CSS"></span>
-            </li>
-            <li class="js up-on-scroll">
-              <span><img src="./img/jslogo.svg" alt="javascript"></span>
-            </li>
+            <li>웹표준 웹접근성을 준수하여 누구나 접근 용이하게 마크업 합니다.</li>
+            <li>심플하며 편리한 stylesheet을 추구하며, 디바이스에 알맞는 반응형 웹을 설계할 수 있습니다. </li>
+            <li>javascript기본 문법을 이해 및 활용, jquery 플러그인등을 사용하여 동적인 웹을 설계합니다.</li>
           </ul>
         </div>
-        <div class="text">
-          <span>웹표준 웹접근성을 준수하여 누구나 접근 용이하게 마크업 합니다.</span>
-          <span>심플하며 편리한 stylesheet을 추구하며, 디바이스에 알맞는 반응형 웹을 설계할 수 있습니다. </span>
-          <span>javascript기본 문법을 이해 및 활용, jquery 플러그인등을 사용하여 동적인 웹을 설계합니다.</span>
-        </div>
       </div>
-    </section>
-    <section id="portfolio">
-      <h2>works</h2>
+    </div>
+  </section>
+  <!-- //about -->
+  <section id="portfolio">
+    <div class="wrap">
+      <h2 data-aos="zoom-in-right" data-aos-duration="1200">works</h2>
       <div class="slide-in-left four col">
-        <div class="box hyundai" onClick="window.open('https://hyundaifuturenet.netlify.app','_blank')" style="cursor:pointer;">
+        <div class="box hyundai" onClick="window.open('https://hyundaifuturenet.netlify.app','_blank')"
+          style="cursor:pointer;">
           <span class="original hyundai_mockup">
           </span>
           <div class="overlay">
           </div>
         </div>
+        <div class=desc>
+          <span>-랜딩페이지-</span>
+          <span>-반응형-</span>
+          <span>-slick-</span>
+          <span>-jquery-</span>
+        </div>
       </div>
       <div class="slide-up four col">
-        <div class="box paris" onClick="window.open('https://parisbaguette.netlify.app','_blank')" style="cursor:pointer;">
+        <div class="box paris" onClick="window.open('https://parisbaguette.netlify.app','_blank')"
+          style="cursor:pointer;">
           <span class="original paris_mockup">
           </span>
           <div class="overlay">
           </div>
         </div>
+        <div class=desc>
+          <span>-랜딩페이지-</span>
+          <span>-반응형-</span>
+          <span>-slick-</span>
+          <span>-jquery-</span>
+        </div>
       </div>
       <div class="slide-in-right four col">
-        <div class="box starbucks"  onClick="window.open('https://starbucksportfolio-8d1.netlify.app','_blank')" style="cursor:pointer;"">
-          <span class="original starbucks_mockup">
+        <div class="box starbucks" onClick="window.open('https://starbucksportfolio-8d1.netlify.app','_blank')"
+          style="cursor:pointer;"">
+          <span class=" original starbucks_mockup">
           </span>
           <div class="overlay">
           </div>
         </div>
+        <div class=desc>
+          <span>-랜딩페이지-</span>
+          <span>-swiper-</span>
+          <span>-gsap-</span>
+          <span>-scrollMagic-</span>
+
+        </div>
+
       </div>
-      
-    </section>
-    <footer id="footer"></footer><!-- footer -->
-    
+
+    </div>
+    <div class="back-down"></div>
+    <!-- //portfolio -->
+    <span class="material-icons-outlined material-icons">
+      <a href="#intro">arrow_drop_up</a>
+    </span>
+  </section>
+
+
   </div>
 
 
@@ -112,12 +169,21 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="./js/header.js"></script>
   <script src="./js/intro.js"></script>
   <script src="./js/skills.js"></script>
   <script src="./js/snap-scroll.js"></script>
-  
+  <script src="./js/snap-scroll.min.js"></script>
+  <script src="./js/smooth.js"></script>
 
+
+  <script>
+    AOS.init();
+  </script>
 
 </body>
+
 </html>

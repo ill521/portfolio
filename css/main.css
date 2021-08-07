@@ -90,11 +90,10 @@ animation: gradient 8s ease infinite;
 #about .skills ul li span:before {content: '';position: absolute;top: 100%;left: 0;width: 100%;height: 100%;background: #000;transition: .5s;z-index: 2;}
 #about .skills ul li span:hover:before {top: 0;}
 #about .skills ul li.html5 {line-height: 80px;}
-#about .skills ul li.html5 p {line-height: 20px;}
 #about .skills ul li.html5 span:before {background: rgb(223, 127, 49);}
 #about .skills ul li.css {line-height: 85px;}
-#about .skills ul li.css p {line-height: 20px;padding: 0 10px;}
 #about .skills ul li.css span:before {background: rgb(57, 57, 138);}
+#about .skills ul li.js {line-height: 85px;}
 #about .skills ul li.js span:before {background: rgb(190, 175, 36);}
 .skills .up-on-scroll {
   margin-top: 20px;
@@ -169,7 +168,7 @@ animation: gradient 8s ease infinite;
 }
 
 @media (max-width:768px)/*아이패드*/ {
-  .mouse {bottom: 200px;height: 60px;}
+  .mouse {bottom: 250px;height: 60px;}
   #about .picture .profile1 {width: 200px;height: 300px;}
   #about .resume li {margin-left: 300px;}
   #about .skills {margin-left: 300px;}

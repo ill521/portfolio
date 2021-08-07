@@ -93,7 +93,7 @@ animation: gradient 8s ease infinite;
 #about .skills ul li.html5 span:before {background: rgb(223, 127, 49);}
 #about .skills ul li.css {line-height: 85px;}
 #about .skills ul li.css span:before {background: rgb(57, 57, 138);}
-#about .skills ul li.js {line-height: 85px;}
+#about .skills ul li.js span {line-height: 80px;margin-top: 10px}
 #about .skills ul li.js span:before {background: rgb(190, 175, 36);}
 .skills .up-on-scroll {
   margin-top: 20px;

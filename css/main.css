@@ -85,8 +85,11 @@ animation: gradient 8s ease infinite;
 #about h2 {font-size: 110px;margin-bottom: 100px;position: absolute;top: 80px;left:20px;font-family: 'anton';}
 #about .about-wrap {max-width: 1024px;margin: 0 auto;padding-top: 180px;text-align: left;}
 #about .resume li {display: block;text-align: left;font-size: 24px;margin-left: 500px;margin-bottom: 10px;}
+#about .resume li.mail a {color: #2f4b80;}
+#about .resume li.phone a {color: #2f4b80;;}
 #about .resume li span {display: inline-block;width: 25%;}
 #about .picture div img {width: 100%;}
+
 
 #about .picture .profile1 {width: 300px;height: 400px;position: absolute;left: 220px;box-shadow: 5px 5px 5px;}
 #about .picture .profile2 {width:200px; height: 268px;position: absolute;left: 280px;top: 600px;z-index: 3;box-shadow: 5px 5px 5px;}
@@ -104,7 +107,7 @@ animation: gradient 8s ease infinite;
 #about .skills ul li.html5 span:before {background: rgb(223, 127, 49);}
 #about .skills ul li.css {line-height: 85px;}
 #about .skills ul li.css span:before {background: rgb(57, 57, 138);}
-#about .skills ul li.js {line-height: 80px;margin-top: 10px}
+#about .skills ul li.js {line-height: 80px;}
 #about .skills ul li.js span:before {background: rgb(190, 175, 36);}
 .skills .up-on-scroll {
   margin-top: 20px;

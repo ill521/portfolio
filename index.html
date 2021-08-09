@@ -26,7 +26,7 @@
   
   <header id="header">
     <div class="wrap">
-      <nav class="nav">
+      <nav class="nav pc-nav">
         <ul id="pager">
           <li class="git" onClick="window.open('https://github.com/ill521','_blank')" style="cursor:pointer;">
             <img src="./img/GitHub-Mark-32px.png" alt="">
@@ -41,18 +41,42 @@
             <a href="#portfolio"><span>portfolio</span></a>
           </li>
         </ul>
-        <div class="side_btn">
+        <div class="side_btn" onclick="w3_open()">
           <span class="material-icons-outlined material-icons">
             menu
             </span>
         </div>
       </nav>
     </div>
+    <aside class="aside mobile-nav">
+      <div class="aside-header">
+        <h2>menu</h2>
+        <button type="button" onclick="w3_close()"><span class="material-icons-outlined material-icons">
+        close
+        </span>
+      </button>
+      </div>
+      <ul>
+        <li>
+          <a href="#intro"><span class="material-icons-outlined material-icons">
+            home
+            </span><p>intro</p></a>
+        </li>
+        <li>
+          <a href="#about"><span class="material-icons-outlined material-icons">
+            help
+            </span><p>about</p></a>
+        </li>
+        <li>
+          <a href="#portfolio"><span class="material-icons-outlined material-icons">
+            collections
+            </span><p>portfolio</p></a>
+        </li>
+      </ul>
+    </aside>
   </header>
   <!-- //header -->
-  <div class="background">
-
-  </div>
+  
   <section id="intro">
     <div class="wrap">
       <div class="main">

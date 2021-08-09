@@ -44,9 +44,10 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 
 
-$(function(){
-  $("section").SnapScroll();
-});
+function w3_open() {
+  document.querySelector(".mobile-nav").style.display = "block";
+}
 
-
-
+function w3_close() {
+  document.querySelector(".mobile-nav").style.display = "none";
+}
